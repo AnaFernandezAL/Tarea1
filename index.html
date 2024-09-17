@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
+    <!--Me deja poner el nombre que va a aparecer en la pestana del navegador-->
 <title>Primera Tarea de Diseño Web</title>
 
 <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
@@ -28,6 +29,8 @@
     </iframe>
 
     <ul>
+        <li>ul hace que se puedan hacer listas con puntos en el item</li>
+        <li>li se refiere a los items de la lista</li>
         <li>Primero</li>
         <li>Segundo</li>
         <li>Tercero</li>
@@ -35,6 +38,7 @@
     </ul>
 
     <ol type="I">
+        <li>ol hace listas con digitos</li>
         <li>Primero</li>
         <li>Segundo</li>
         <li>Tercero</li>
@@ -43,15 +47,16 @@
 
     <dl>
         <dt>HTML</dt>
-        <dd>Lenguaje para hacer páginas web</dd>
+        <dd>dl hace una seccion, dt es el titulo y dd es el cuerpo</dd>
     </dl>
 
     <figure>
         <img src="Ilustración34.jpg" alt="Desc de la imagen">
-        <figcaption>Un dibujo hecho por mí</figcaption>
+        <figcaption>figure me deja poner cosas como imagenes, src es la fuente y alt es la desc de la imagen</figcaption>
     </figure>
 
     <pre>
+        pre me deja escribir los texto tal cual como estan en el codigo
         prueba de pre
         prueba de pre
         prueba de pre con sangría
@@ -61,13 +66,13 @@
         "Esto es para escribir cuotas sacadas de otros lugares." - alguien
     </blockquote>
 
-    <p>una frase corta <q cite="https://es.wikipedia.org/wiki/Marie_Curie">otra frase corta</q>.</p>
+    <p>con p y con q puedo escribir una frase <q cite="https://es.wikipedia.org/wiki/Marie_Curie">que saco de otra parte</q></p>
     <p>esta es una <abbr title="Lenguaje de Marcado de Hipertexto">Prueba de abbr</abbr> texto de prueba.</p>
-    <p>esto es una <dfn title="Prueba de dfn">DFN</dfn> es una prueba.</p>
-    <p>usa el atajo de teclado <kbd>Ctrl</kbd> + <kbd>F</kbd></p>
+    <p>dfn me deja <dfn title="Prueba de dfn">pponer en italic las palabras</dfn></p>
+    <p>kbd me deja resaltar palablas con una fuente distinta como: <kbd>Ctrl</kbd> + <kbd>F</kbd></p>
 
     <p><b>la b hace que se ponga el texto en negrita.</b></p>
-    <p><strong>el strong aparte de poner el texto en negrita</strong></p>
+    <p><strong>el strong pone el texto en negrita</strong></p>
     <p><i>La i pone el texto en cursiva</i></p>
     <p><em>El em pone el texto en cursiva también</em></p>
 
@@ -94,11 +99,12 @@
 
     <pre>
         <code>
+            pre y code me deja escribir como si fuera un codigo, por ejm:
         def saludo():
             print("Hola Mundo")
         </code>
     </pre>
-
+    <!--Canvas me permite dibujar formas como un cuadrado y otras formas-->
     <canvas id="miCanvas" width="200" height="100" style="border:2px solid #000000;"></canvas>  
     <script>  
         var canvas = document.getElementById("miCanvas");  
@@ -107,27 +113,34 @@
         contexto.fillRect(20, 20, 150, 50);  
     </script>   
 
+<!--svg me deja hacer dibujos de formas y otras cosas-->
     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
         <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="red"/>
     </svg>
 
+    <!--Me deja poner audios-->
     <audio controls>
         <source src="SonidoTrancición.mp3" type="audio/mpeg">
     </audio>
 
+    <!--Me deja poner videos-->
     <video width="640" height="360" controls>
         <source src="ilustracion_final.mp4" type="video/mp4">
         <track src="subtitulos-en.vtt" kind="subtitles" srclang="en" label="Inglés">
         <track src="subtitulos-es.vtt" kind="subtitles" srclang="es" label="Español">
     </video>
 
+    <!--Me deja poner videos de YT-->
     <iframe src="https://youtu.be/dQw4w9WgXcQ?si=1zJc0AhSgeucddcL" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
+    <!--Me deja poner informacion extra como si fuera una pestana pequena-->
     <details>
         <summary>Saber Más</summary>
         <p>Esta tarea se puede entregar hasta el lunes 16 a las 11:59</p>
     </details>
+    <!--Me deja poner el pie de la pagina-->
     <footer id="footer">
+        <!--Me deja poner la info del autor de la pagina-->
         <address>
             Desarrollado por <a href="mailto:tarea@gmail.com">Ana Paula Fernandez</a><br>
             1234 Calle, Ciudad, País
